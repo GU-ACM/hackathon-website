@@ -64,18 +64,17 @@ nav a {
     flex-direction: row;
     margin-top: 3rem;
     justify-content: center;
+    height: 30rem; 
 
 }
 
 #hackathonTeam {
     width: 50%;
-    height: 26rem;
 }
 
 .infoWrapper .infoText {
     background-color: black;
     width: 50%;
-    height: 20rem;
     padding: 3rem; 
     line-height: 2rem;
     display: flex;
