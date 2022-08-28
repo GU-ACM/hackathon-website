@@ -32,6 +32,15 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: black; 
+    background-color: white;
+}
+
 #bollier {
     width: 100%;
     height: auto;
