@@ -45,6 +45,7 @@ nav a:active {
     width: 100%;
     height: auto;
     z-index: 1;
+    margin-bottom: 3rem;
 }
 
 #hackathon {
