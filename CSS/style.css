@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech&display=swap');
+
 html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -39,6 +41,8 @@ nav button {
 
 nav button a {
     text-decoration: none;
+    font-family: "Share Tech", sans-serif;
+    font-size: 25px;
     color: white;
 }
 
