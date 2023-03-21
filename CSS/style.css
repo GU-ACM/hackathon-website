@@ -12,6 +12,7 @@ body {
 
 nav {
     background-color: #1a0b2b;
+    float:right;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -21,12 +22,16 @@ nav {
     z-index: 9999;
     height: 3rem; 
     padding-top: 0;
+    padding-left: 70%;
+    padding-right: 10%;
     margin-top: 0;
 }
 
 nav a {
     text-decoration: none;
     font-family: "Share Tech", sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 25px;
     color: white;
 }
