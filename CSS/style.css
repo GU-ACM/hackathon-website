@@ -245,6 +245,30 @@ nav a:active {
     justify-content: space-around;
 }
 
+
+.coin_container{
+backGround-color: blue;
+width: 400px;
+padding: 50px;
+border: solid 5px black;
+position: absolute;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+box-shadow: 15px 30px 35 px rgba(0,0,0,0.1);
+border-radius: 10px;
+-webkit-perspective: 300px;
+perspective: 300px;
+}
+
+.coin_stats{
+    backGround-color: blue;
+    text-align: right;
+    color: #101020;
+    font-weight: 500;
+    line-height: 25px;
+}
+
 footer {
     padding-top: 1rem; 
     padding-bottom: .5rem;
