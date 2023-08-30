@@ -18,10 +18,13 @@ html {
 
 body {
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* header css */
 header {
+    flex: none;
     display: flex;
     justify-content: center;
 }
@@ -32,16 +35,17 @@ header {
 }
 
 /* carousel css */
-main {
+#carousel {
+    flex: auto;
     border: 3px solid maroon;
 }
 
-.carousel {
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    align-items: center;
-    justify-items: center;
-    padding: 5px;
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid green;
+    margin: 5px;
+    height: 90%;
 }
 
 button {
@@ -79,27 +83,23 @@ button:active {
     grid-column: 3 4;
 }
 
-.card-container {
-    grid-column: 2 3;
+.card {
+    margin: 1px;
     width: 100%;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.4s ease;
-    pointer-events: none;
-    border: 3px solid maroon;
+    border: 3px solid blue;
 }
 
-/* card css */
-.card {
-    text-align: center;
+.content-wrapper {
+
+}
+
+#sponsors {
+    flex: auto;
 }
 
 /* footer css */
 footer {
-    position: absolute;
-    bottom: 0;
+    flex: none;
 }
 
 .DuckImage img {
