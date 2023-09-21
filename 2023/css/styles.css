@@ -89,9 +89,9 @@ button:active {
     border: 3px solid blue;
 }
 
-.content-wrapper {
+/* .content-wrapper {
 
-}
+} */
 
 #sponsors {
     flex: auto;
