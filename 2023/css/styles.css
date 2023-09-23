@@ -1,25 +1,26 @@
 :root {
     --base-font: 1.6rem;
     --clr-bg: #3d3d3d;
-    --clr-text: #fafafa;
-    --clr-btn: #f2a365;
-    --clr-btn-hr: #eb8232;
+    --clr-ctn: #C25313;
+    --clr-hdr: #13BA50;
+    --clr-acc: #B3ABA6;
 }
 
 * {
-    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
 
 html {
     height: 100%;
+    background-color: var(--clr-hdr);
 }
 
 body {
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
+    font-family: 'arcadeclassicregular';
 }
 
 /* header css */
@@ -31,67 +32,136 @@ header {
 
 .HeadingText {
     color: var(--clr-bg);
-    font-family: 'arcadeclassicregular';
 }
 
 /* carousel css */
 #carousel {
-    flex: auto;
-    border: 3px solid maroon;
+    background-color: var(--clr-ctn);
 }
 
-.card-wrapper {
-    display: flex;
-    flex-direction: row;
-    border: 3px solid green;
-    margin: 5px;
-    height: 90%;
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
 }
 
-button {
-    width: 3rem;
-    height: 3em;
-    border-radius: 50%;
-    background-color: var(--clr-btn);
-    color: var(--clr-text);
-    border: 0;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5);
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.4s ease;
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 
-button:hover {
-    background-color: var(--clr-btn-hr);
-    font-weight: 800;
-    color: var(--clr-bg);
+ul.slides input {
+    display: none;
 }
 
-button:focus {
-    outline: 0;
+.slide-container {
+    display: block;
 }
 
-button:active {
-    transform: scale(0.95);
-}
-
-#prev {
-    grid-column: 1 2;
-}
-
-#next {
-    grid-column: 3 4;
-}
-
-.card {
-    margin: 1px;
+.slide-content {
+    position: absolute;
     width: 100%;
-    border: 3px solid blue;
+    opacity: 0;
 }
 
-/* .content-wrapper {
+.slide-content div {
+    margin-inline: 5rem;
+    background-color:aqua;
+    margin-block: 2rem;
+    padding: 2px;
+    border-radius: 0.35rem;
+}
 
-} */
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-content:hover+.carousel-controls label {
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked+.slide-container .slide-content {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked+.slide-container .carousel-controls label {
+    display: block;
+}
+
+input#content-1:checked~.carousel-dots label#content-dot-1,
+input#content-2:checked~.carousel-dots label#content-dot-2,
+input#content-3:checked~.carousel-dots label#content-dot-3,
+input#content-4:checked~.carousel-dots label#content-dot-4,
+input#content-5:checked~.carousel-dots label#content-dot-5,
+input#content-6:checked~.carousel-dots label#content-dot-6 {
+    opacity: 1;
+}
+
+
+input:checked+.slide-container .nav label {
+    display: block;
+}
 
 #sponsors {
     flex: auto;

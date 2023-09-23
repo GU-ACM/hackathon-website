@@ -8,8 +8,6 @@
     <title>GU Hackathon</title>
 
     <link rel="stylesheet" href="./css/styles.css">
-
-    <script src="./src/carousel.js"></script>
 </head>
 
 <body>
@@ -22,23 +20,82 @@
     </header>
 
     <section id="carousel">
-        <div class="card-wrapper">
-            <button id="prev" type="button">
-                &lt;
-            </button>
-            <div class="card">
-                <div class="content-wrapper">
-
+        <ul class="slides">
+            <input type="radio" name="radio-buttons" id="content-1" checked />
+            <li class="slide-container">
+                <div class="slide-content">
+                    <!-- Content goes Here -->
+                    <div id="title">Title 1</div>
+                    <div id="content">Content 1</div>
                 </div>
+                <div class="carousel-controls">
+                    <label for="content-4" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="content-2" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="content-2" />
+            <li class="slide-container">
+                <div class="slide-content">
+                    <!-- Content goes Here -->
+                    <div id="title">Title 2</div>
+                    <div id="content">Content 2</div>
+                </div>
+                <div class="carousel-controls">
+                    <label for="content-1" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="content-3" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="content-3" />
+            <li class="slide-container">
+                <div class="slide-content">
+                    <!-- Content goes Here -->
+                    <div id="title">Title 3</div>
+                    <div id="content">Content 3</div>
+                </div>
+                <div class="carousel-controls">
+                    <label for="content-2" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="content-4" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="content-4" />
+            <li class="slide-container">
+                <div class="slide-content">
+                    <!-- Content goes Here -->
+                    <div id="title">Title 4</div>
+                    <div id="content">Content 4</div>
+                </div>
+                <div class="carousel-controls">
+                    <label for="content-3" class="prev-slide">
+                        <span>&lsaquo;</span>
+                    </label>
+                    <label for="content-1" class="next-slide">
+                        <span>&rsaquo;</span>
+                    </label>
+                </div>
+            </li>
+            <div class="carousel-dots">
+                <label for="content-1" class="carousel-dot" id="content-dot-1"></label>
+                <label for="content-2" class="carousel-dot" id="content-dot-2"></label>
+                <label for="content-3" class="carousel-dot" id="content-dot-3"></label>
+                <label for="content-4" class="carousel-dot" id="content-dot-4"></label>
             </div>
-            <button id="next" type="button">
-                &gt;
-            </button>
-        </div>
+        </ul>
     </section>
 
     <section id="sponsors">
-        
+
     </section>
 
     <footer>
