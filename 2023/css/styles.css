@@ -1,9 +1,10 @@
 :root {
     --base-font: 1.6rem;
-    --clr-bg: #3d3d3d;
-    --clr-ctn: #C25313;
-    --clr-hdr: #13BA50;
-    --clr-acc: #B3ABA6;
+    --clr-bg: #45a480;
+    --clr-hdr: #f99c14;
+    --clr-txt: #2c3f52;
+    --clr-ctn: #e3753f;
+    --clr-txt2: #e3d46f;
 }
 
 * {
@@ -13,7 +14,6 @@
 
 html {
     height: 100%;
-    background-color: var(--clr-hdr);
 }
 
 body {
@@ -28,15 +28,16 @@ header {
     flex: none;
     display: flex;
     justify-content: center;
+    background-color: var(--clr-hdr);
 }
 
 .HeadingText {
-    color: var(--clr-bg);
+    color: var(--clr-txt);
 }
 
 /* carousel css */
 #carousel {
-    background-color: var(--clr-ctn);
+    background-color: var(--clr-bg);
     height: 100%;
 }
 
@@ -46,15 +47,6 @@ ul.slides {
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-.slides * {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
 }
 
 ul.slides input {
@@ -69,14 +61,16 @@ ul.slides input {
     position: absolute;
     width: 100%;
     opacity: 0;
+    color: var(--clr-txt2);
 }
 
 .slide-content div {
     margin-inline: 5rem;
-    background-color:aqua;
+    background-color: var(--clr-ctn);
     margin-block: 2rem;
     padding: 2px;
     border-radius: 0.35rem;
+    height: 100px;
 }
 
 .carousel-controls {
@@ -87,7 +81,7 @@ ul.slides input {
     z-index: 999;
     font-size: 100px;
     line-height: 600px;
-    color: #fff;
+    color: var(--clr-txt2);
 }
 
 .carousel-controls label {
@@ -108,13 +102,15 @@ ul.slides input {
 }
 
 .carousel-controls .prev-slide {
-    width: 49%;
+    width: 5%;
+    height: 20%;
     text-align: left;
     left: 0;
 }
 
 .carousel-controls .next-slide {
-    width: 49%;
+    width: 5%;
+    height: 20%;
     text-align: right;
     right: 0;
 }
@@ -133,9 +129,10 @@ ul.slides input {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--clr-txt2);
     opacity: 0.5;
     margin: 10px;
+    cursor: pointer;
 }
 
 input:checked+.slide-container .slide-content {
@@ -156,7 +153,6 @@ input#content-5:checked~.carousel-dots label#content-dot-5,
 input#content-6:checked~.carousel-dots label#content-dot-6 {
     opacity: 1;
 }
-
 
 input:checked+.slide-container .nav label {
     display: block;
