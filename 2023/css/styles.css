@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    /* height: 100%; */
+    height: 100%;
     display: flex;
     flex-direction: column;
     font-family: 'arcadeclassicregular';
@@ -37,16 +37,15 @@ header {
 /* carousel css */
 #carousel {
     background-color: var(--clr-ctn);
+    height: 100%;
 }
 
 ul.slides {
     display: block;
     position: relative;
-    height: 450px;
+    height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    list-style: none;
 }
 
 .slides * {
