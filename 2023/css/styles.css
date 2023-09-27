@@ -1,0 +1,177 @@
+:root {
+    --base-font: 1.6rem;
+    --clr-bg: #45a480;
+    --clr-hdr: #f99c14;
+    --clr-txt: #2c3f52;
+    --clr-ctn: #e3753f;
+    --clr-txt2: #e3d46f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'arcadeclassicregular';
+}
+
+/* header css */
+header {
+    flex: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-hdr);
+}
+
+.HeadingText {
+    color: var(--clr-txt);
+}
+
+/* carousel css */
+#carousel {
+    background-color: var(--clr-bg);
+    height: 100%;
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul.slides input {
+    display: none;
+}
+
+.slide-container {
+    display: block;
+}
+
+.slide-content {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    color: var(--clr-txt2);
+}
+
+.slide-content div {
+    margin-inline: 5rem;
+    background-color: var(--clr-ctn);
+    margin-block: 2rem;
+    padding: 2px;
+    border-radius: 0.35rem;
+    height: 100px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: var(--clr-txt2);
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-content:hover+.carousel-controls label {
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 5%;
+    height: 20%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 5%;
+    height: 20%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--clr-txt2);
+    opacity: 0.5;
+    margin: 10px;
+    cursor: pointer;
+}
+
+input:checked+.slide-container .slide-content {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked+.slide-container .carousel-controls label {
+    display: block;
+}
+
+input#content-1:checked~.carousel-dots label#content-dot-1,
+input#content-2:checked~.carousel-dots label#content-dot-2,
+input#content-3:checked~.carousel-dots label#content-dot-3,
+input#content-4:checked~.carousel-dots label#content-dot-4,
+input#content-5:checked~.carousel-dots label#content-dot-5,
+input#content-6:checked~.carousel-dots label#content-dot-6 {
+    opacity: 1;
+}
+
+input:checked+.slide-container .nav label {
+    display: block;
+}
+
+#sponsors {
+    flex: auto;
+}
+
+/* footer css */
+footer {
+    flex: none;
+}
+
+.DuckImage img {
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'arcadeclassicregular';
+    src: url('../public/ARCADECLASSIC.TTF');
+}
