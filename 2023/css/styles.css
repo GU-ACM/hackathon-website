@@ -7,10 +7,10 @@
     --clr-txt2: #e3d46f;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 
 html {
     height: 100%;
@@ -68,9 +68,9 @@ ul.slides input {
     margin-inline: 5rem;
     background-color: var(--clr-ctn);
     margin-block: 2rem;
-    padding: 2px;
+    /* padding: 2px; */
     border-radius: 0.35rem;
-    height: 100px;
+    height: 110px;
 }
 
 .carousel-controls {
@@ -174,4 +174,15 @@ footer {
 @font-face {
     font-family: 'arcadeclassicregular';
     src: url('../public/ARCADECLASSIC.TTF');
+}
+
+.Form_Link {
+    /* margin: 50px; */
+    /* padding: 10px; */
+    font-size: 60px;
+    /* border-color: blue; */
+    /* border-style: solid; */
+    /* border-width: 10px; */
+    /* margin: 50px; */
+    text-align: center;
 }
