@@ -24,8 +24,18 @@ body {
     flex-direction: column;
     font-family: 'arcadeclassicregular';
 }
-
-
+h3{
+    font-size: 28px;
+    text-align: center;
+}
+h4{
+    font-size: 100px;
+    text-align: center;
+}
+h5{
+    font-size: 35px;
+    text-align: center;
+}
 /* header css */
 header {
     flex: none;
@@ -39,14 +49,22 @@ header {
 }
 
 #title h2{
+    text-align: center;
     font-size: 75px;
+}
+#title h6{
+    font-size: 75px;
+}
+h7{
+    font-size: 30px;
+    text-align: center;
 }
 #title{
     font-size: 40px;
 }
 
 #content{
-    font-size: 24px;
+    font-size: 20px;
 }
 /* carousel css */
 .entire-cards-section {
