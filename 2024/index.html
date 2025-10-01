@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 Gonzaga Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo-image">
+            <img src="./pictures/ACMLogo.png" alt = "GU Logo" height = 100%;>
+        </div>
+        <div class="logo">
+            <img src="./pictures/gonzagaHackathon.png" alt = "GU Hackathon" width = 50%;>
+        </div>
+        <div>
+            <ul class="nav-links" width = 50%;>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Schedule">Schedule</a></li>
+                <li><a href="#Rules">Rules</a></li>
+                <li><a href="#FAQs">FAQs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+    <div class="logo">
+        <img src="./pictures/gonzagaHackathon.png" alt = "GU Hackathon" width = 80%;>
+    </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Schedule" onclick="toggleMenu()">Schedule</a></li>
+                <li><a href="#Rules" onclick="toggleMenu()">Rules</a></li>
+                <li><a href="#FAQs" onclick="toggleMenu()">FAQs</a></li>
+                <li><a href="#Sponsors" onclick="toggleMenu()">FAQs</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="main-page">
+        <nav id = "register">
+            <h3>November 2nd</h3>
+            <a href = "https://forms.gle/ko3XVa6EWyVZpWpd7">Register Now!</a>
+        </nav>
+        
+        <img src="./pictures/whiteArrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#About'">
+    </section>
+
+    <section id="About">
+        <h2>About</h2>
+        <h1 style="text-align: center;">Have an idea for a project you've never had the time to actually put together? </h1>
+        <h1 style="text-align: center;">Want to learn a new technology? Looking for some resume builders?</h1>
+        <h1 style="text-align: center;">Register for the Hackathon and see what you can hack together in 12 hours!</h1>
+                        
+        <img src="./pictures/whiteArrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Schedule'">
+    </section>
+
+    <section id="Schedule">
+        <h2>Hackathon Schedule</h2>
+        <div style="text-align: center;">
+            <h1>8:00 am - Check-in opens</h1>
+            <h1>9:30 am - Keynote speaker</h1>
+            <h1>10:00 am - Hacking begins</h1>
+            <h1>12:00 pm - Lunch</h1>
+            <h1>6:00 pm - Dinner</h1>
+            <h1>10:00 pm - Judging begins</h1>
+            <h1>11:30 pm - Judging ends</h1>
+            <h1>11:30 pm - Awards Ceremony</h1>
+        </div>
+        <img src="./pictures/whiteArrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Rules'">
+    </section>
+
+    <section id="Rules">
+        <h2>Ground Rules</h2>
+        <p>Do not hack ahead of time. You are allowed to plan beforehand, but no coding.</p><br>
+        <p>Do not sabotage or harm other teams, unless given express permission. This is a friendly competition.</p><br>
+        <p>Bring your own gear, including power strips and chargers. We may not have enough spare for everyone.</p><br>
+        <p>You are allowed to leave at any time. You are not required to stay until the end for judging.</p>
+        <img src="./pictures/whiteArrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#FAQs'">
+    </section>
+
+    <section id="FAQs">
+        <h2> FAQs</h2>
+        <p>Do I have to go to Gonzaga to participate?</p>
+        <h1>Students from other colleges and nearby high schools can also participate.</h1><br>
+        <p>If I sign up, do I need to stay for the whole competition?</p>
+        <h1>You are allowed to leave whenever. If you stay to the end you do not need to submit your project for judging.</h1> <br>
+        <p>Will there be food?</p>
+        <h1>Yes food will be provided. Let us know of any allergies and we will do our best to accomidate.</h1><br>
+        <p>Is it free? Do I need a team?</p>
+        <h1>Yup, our hackathon is completely free. You can participate solo or with a team. We can also assign you to a team if you want.</h1>
+        <img src="./pictures/whiteArrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Sponsors'">
+    </section>
+
+    <section id="Sponsors">
+        <h2>Our Sponsors</h2>
+        <div class="sponsors">
+            <a href="https://www.watrust.com/about/our-story" target="_blank"><img src="pictures/sponsors/Washington Trust Bank _Logo_Stacked_RGB.png" alt="Washington Trust Bank Logo" width="200" height="200" style="padding: 15px;"></a>  
+            <a href="https://flumewater.com/about/" target="_blank"><img src="/pictures/sponsors/Flume_Logo_Secondary_Horizontal_Blue.png" alt="Flume Logo" width="417.193" height="110" style="padding: 60px; background-color: #137a63;"></a>
+            <a href="https://www.twobarrels.com" target="_blank"><img src="pictures/sponsors/thumbnail_twobarrels.jpg" alt="2Barrels Logo" width="200" height="200" style="background-color: #e6e6e6; padding: 15px;"></a>  
+        </div>
+        <br>
+        <div class="sponsors">
+            <a href="https://selinc.com/company/about/" target="_blank"><img src="pictures/sponsors/sel.jpg" alt="Schweitzer Engineering Laboratories Logo" width="180.959" height="105" style="padding: 40px;"></a>    
+            <a href="https://alliant.com/about/the-alliant-story/#" target="_blank"><img src="pictures/sponsors/Alliant_logo.jpg" alt="Alliant Logo" width="293.904" height="105" style="padding: 40px;"></a>  
+        </div>
+        <br>
+        <div class="sponsors">
+            <a href="https://binx.tv" target="_blank"><img src="pictures/sponsors/thumbnail_Binx.png" alt="Binx Logo" width="166.667" height="166.667"></a>  
+            <a href="https://www.expeditors.com/about-us/" target="_blank"><img src="pictures/sponsors/Expeditors_logo.png" alt="Expeditors Logo" width="250" height="166.667"></a>  
+            <a href="https://www.gonzaga.edu/school-of-engineering-applied-science" target="_blank"><img src="pictures/sponsors/thumbnail_GonzagaSeas.jpg" alt="Gonzaga SEAS Logo" width="166.667" height="166.667"></a>  
+        </div>
+        <br>
+        <div class="sponsors">
+            <a href="" target="_blank"><img src="pictures/sponsors/thumbnail_nextGenTechBar.jpg" alt="Next Gen Tech Bar Logo" width="166.667" height="166.667" style="padding: 0px;"></a>  
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <p></p>             
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Schedule">Schedule</a></li>
+                    <li><a href="#Rules">Rules</a></li>
+                    <li><a href="#FAQs">FAQs</a></li>
+                    <li><a href="#Sponsors" onclick="toggleMenu()">Sponsors</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>2024 Gonzaga Hackathon</p>
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
