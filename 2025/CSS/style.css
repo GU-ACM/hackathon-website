@@ -91,7 +91,6 @@ nav a:active {
     color: aquamarine;
 }
 
-/* Section 2: About */
 .wrapper {
     max-width: var(--max-width);
     margin: 1rem auto;
@@ -209,9 +208,20 @@ nav a:active {
 }
 
 .sponsorWrapper #sponsors {
-    width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-self: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    gap: 1rem;
+}
+
+.sponsorWrapper #sponsors img {
+    flex: 1 1 0;
+    max-height: 10rem;
+    width: auto;
+    object-fit: contain;
 }
 
 footer {
