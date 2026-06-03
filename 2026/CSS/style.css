@@ -1,3 +1,4 @@
+/* Below is the index.html CSS styling. The Featured Projects page-specific styling begins on line 237 */
 :root {
     --max-width: 1200px;
     --page-bg: #CFCFCF;
@@ -231,4 +232,113 @@ footer {
     text-align: center;
     background-color: black;
     color: white;
+}
+
+/* ------------------------------------- */
+/*     START OF featureProjects.html     */
+/* ------------------------------------- */
+.featuredProjects {
+    background-color:#161616;
+}
+
+.featuredProjects .header {
+    min-height: 70vh;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/inside-bollier.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.featuredProjects .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+
+.featuredProjects .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 3%;
+}
+
+.featuredProjects .card {
+    background: rgba(48, 48, 46, 1);
+    border-radius: 10px;
+    border: 0.5px solid rgba(222, 220, 209, 0.15);
+    overflow: hidden;
+    min-height: 50px;
+}
+
+.featuredProjects .card-first {
+    border: 2px solid #ffd900a1;
+}
+
+.featuredProjects .card-img {
+    width: 100%;
+    height: 150px;
+    background: rgb(31, 31, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.featuredProjects .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featuredProjects .card-body {
+    padding: 10px;
+}
+
+.featuredProjects .award-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    background: #FAEEDA;
+    color: #633806;
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+.featuredProjects .card-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 4px;
+}
+
+.featuredProjects .card-body {
+    font-size: 14px;
+    color: #9c9c9c;
+    line-height: 1.5;
+    margin: 0 0 8px;
+}
+
+.featuredProjects .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    color: #c3c3c3;
+}
+
+@media(max-width: 700px) {
+    .featuredProjects .text-box h1 {
+        font-size: 20px;
+    }
+    .featuredProjects .text-box p {
+        font-size: 12px;
+    }
 }
