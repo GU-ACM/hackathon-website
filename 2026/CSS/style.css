@@ -213,7 +213,8 @@ nav a:active {
     display: flex;
     justify-self: space-around;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
     overflow: hidden;
     gap: 1rem;
 }
@@ -223,6 +224,8 @@ nav a:active {
     max-height: 10rem;
     width: auto;
     object-fit: contain;
+    max-width: 600px; /* Warning: this was a stupid fix i did cause i got fed up, good luck to my predecessors o7 */
+    align-items: center;
 }
 
 footer {
@@ -235,7 +238,7 @@ footer {
 }
 
 /* ------------------------------------- */
-/*     START OF featureProjects.html     */
+/*     START OF featuredProjects.html     */
 /* ------------------------------------- */
 .featuredProjects {
     background-color:#161616;
